@@ -281,6 +281,26 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Parallel Rendering -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Massively Paralleled Rendering</h2>
+        <video id="teaser" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/parallel.mp4"
+                  type="video/mp4">
+        </video>
+        <p>
+          <b>DISCOVERSE</b> supports paralleled neural rendering, with a total of 650FPS for 5 cameras 
+          rendering 640x480 RGB-D frames on an Nvidia 6000Ada, and a total of 240FPS for the same setup 
+          on an Nvidia 3060 laptop.
+        </p>
+      </div>
+    </div>
+    <!-- Parallel Rendering -->
+  </div>
+</section>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -381,22 +401,70 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Parallel Rendering -->
-    <div class="columns is-centered">
+
+    <!-- Concurrent Work. -->
+    <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">Massively Paralleled Rendering</h2>
-        <video id="teaser" autoplay muted loop playsinline height="100%">
-          <source src="./static/videos/parallel.mp4"
-                  type="video/mp4">
-        </video>
-        <p>
-          <b>DISCOVERSE</b> supports paralleled neural rendering, with a total of 650FPS for 5 cameras 
-          rendering 640x480 RGB-D frames on an Nvidia 6000Ada, and a total of 240FPS for the same setup 
-          on an Nvidia 3060 laptop.
-        </p>
+        <h2 class="title is-3">Support Various 3D Assets</h2>
       </div>
     </div>
-    <!-- Parallel Rendering -->
+
+    <div class="columns is-centered has-text-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <h2 class="subtitle has-text-centered">3D Dataset</h2>
+        <div class="content">
+          <!-- <p>
+            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
+            would be impossible without nerfies since it would require going through a wall.
+          </p> -->
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/dataset.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="subtitle has-text-centered">3D AIGC</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <!-- <p>
+              As a byproduct of our method, we can also solve the matting problem by ignoring
+              samples that fall outside of a bounding box during rendering.
+            </p> -->
+            <video id="matting-video" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/aigc.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+      <!--/ Matting. -->
+
+      <!-- Shuffling. -->
+      <div class="column">
+        <h2 class="subtitle has-text-centered">Articulated Objects</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <!-- <p>
+              As a byproduct of our method, we can also solve the matting problem by ignoring
+              samples that fall outside of a bounding box during rendering.
+            </p> -->
+            <video id="matting-video" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/articulated.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+      <!--/ Shuffling. -->
+    </div>
   </div>
 </section>
 
