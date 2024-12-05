@@ -254,22 +254,18 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            We present DISCOVERSE, a modular, lightweight, open-source simulator 
+            for Real2Sim2Real robot learning. It features a holistic Real2Sim pipeline 
+            that synthesizes hyper-realistic geometry and appearance of complex real-world scenarios, 
+            paving the way for comprehensive analysis and bridging of the Sim2Real gap. 
+            Powered by Gaussian Splatting and MuJoCo, DISCOVERSE enables massively parallel simulation 
+            of multiple sensor modalities and accurate physics, 
+            with inclusive supports for existing 3D assets, robot models, and ecosystems, 
+            empowering large-scale reinforcement learning and imitation learning, 
+            efficient data collection and policy demonstration, and downstream tasks like 
+            teleoperation, navigation, autonomouns driving, multi-agent coordination, etc. 
           </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
+          <!-- <p>
             We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
             photos/videos into deformable NeRF
             models that allow for photorealistic renderings of the subject from arbitrary
@@ -279,7 +275,7 @@
             images of the same pose at different viewpoints. We show that our method faithfully
             reconstructs non-rigidly deforming scenes and reproduces unseen views with high
             fidelity.
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
